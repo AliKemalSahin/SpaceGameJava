@@ -19,7 +19,7 @@ pipeline
                  cd target
                  cp dist/SpaceGame.jar SpaceGame.jar 
                 '''
-                stash includes: 'target/*.jar', name: 'targetfiles'
+                stash includes: 'dist/*.jar', name: 'distfiles'
             }
         }
         stage('Build Docker Image') 
