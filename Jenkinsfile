@@ -17,7 +17,7 @@ pipeline
                 sh '''
                  mvn clean package
                  cd target
-                 cp rest-service-0.0.1-SNAPSHOT.jar rest-service.jar 
+                 cp dist/SpaceGame.jar SpaceGame.jar 
                 '''
                 stash includes: 'target/*.jar', name: 'targetfiles'
             }
