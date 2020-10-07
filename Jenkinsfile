@@ -16,7 +16,7 @@ pipeline
             {
                 sh '''
                  mvn clean package
-                 cd target
+                 cd dist
                  cp dist/SpaceGame.jar SpaceGame.jar 
                 '''
                 stash includes: 'dist/*.jar', name: 'distfiles'
