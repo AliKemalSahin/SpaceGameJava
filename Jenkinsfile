@@ -10,9 +10,7 @@ pipeline
     }
     stages 
     {
-        when {
-                branch 'master'
-             }
+
         stage('Build Jar')
         {
             steps 
@@ -27,6 +25,9 @@ pipeline
         }
         stage('Build Docker Image') 
         {
+            when {
+                branch 'master'
+            }
             steps 
             {
                 script 
