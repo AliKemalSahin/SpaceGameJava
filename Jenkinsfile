@@ -32,6 +32,7 @@ pipeline
             {
                 script 
                 {
+                    sh 'docker version'
                     app = docker.build(DOCKER_IMAGE_NAME) 
                 }
             }
