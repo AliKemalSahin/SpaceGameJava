@@ -16,10 +16,10 @@ pipeline
             {
                 sh '''
                  mvn clean package
-                 cd dist
+                 cd target
                  cp SpaceGame-0.0.1-SNAPSHOT.jar SpaceGame.jar 
                 '''
-                stash includes: 'dist/*.jar', name: 'distfiles'
+                stash includes: 'target/*.jar', name: 'targetfiles'
             }
         }
         stage('Build Docker Image') 
