@@ -28,6 +28,7 @@ pipeline
             {
                 script 
                 {
+                    chmod 777 /var/run/docker.sock
                     app = docker.build(DOCKER_IMAGE_NAME) 
                 }
             }
