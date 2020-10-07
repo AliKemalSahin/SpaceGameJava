@@ -10,6 +10,9 @@ pipeline
     }
     stages 
     {
+        when {
+                branch 'master'
+             }
         stage('Build Jar')
         {
             steps 
