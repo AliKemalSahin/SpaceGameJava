@@ -15,8 +15,6 @@ pipeline
             steps 
             {
                 sh '''
-                 mvn clean install spring-boot:repackage
-
                  mvn clean package
                  cd target
                  cp dist/SpaceGame.jar SpaceGame.jar 
