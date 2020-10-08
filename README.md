@@ -1,2 +1,2 @@
 # SpaceGameJava
-Trigger !!!
+Trigger !
