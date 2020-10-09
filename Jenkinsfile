@@ -50,7 +50,7 @@ pipeline
                 }
             }
         }
-        
+        /*
         stage('Orchestrate') {
             steps{
                 script{
@@ -60,7 +60,7 @@ pipeline
                 }
                 }
         }   
-        
+        */
         stage('DeployToProduction') {
             when {
                 branch 'master'
